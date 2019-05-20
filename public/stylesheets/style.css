@@ -1,0 +1,30 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: linear-gradient(to right, #FF9900, #ee8800);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 400px;
+  font-size: 28px;
+}
+
+#services-count {
+  font-size: 96px;
+  font-weight: bold;
+  background: #fff;
+  padding: 20px;
+}
+
+#aws-logo {
+  width: 200px;
+  height: auto;
+}
+
+a {
+  color: #00B7FF;
+}
