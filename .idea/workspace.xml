@@ -58,11 +58,21 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/fetch-counts.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="64">
               <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/readme.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -81,6 +91,9 @@
       <find>3000</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -98,6 +111,7 @@
     <option name="width" value="1680" />
     <option name="height" value="1050" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -183,12 +197,12 @@
       <updated>1550227063069</updated>
       <workItem from="1550227067433" duration="5028000" />
       <workItem from="1550881265558" duration="208000" />
-      <workItem from="1558356402607" duration="230000" />
+      <workItem from="1558356402607" duration="493000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5466000" />
+    <option name="totallyTimeSpent" value="5729000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
