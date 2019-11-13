@@ -4,13 +4,19 @@
   <title>How many Amazon Web Services are there?</title>
   <link rel="stylesheet" href="/stylesheets/style.css">
   <script src="/js/fetch-counts.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
   <div class="container">
     <h1>How many <img id="aws-logo" alt="Amazon Web Services" src="/images/aws-logo.png" /> are there now?</h1>
-    <p id="services-count">...</p>
+    <div id="services-count"><div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div></div>
   </div>
+  <div id="footer">&copy; <a href="https://patrickbrett.net" target="_blank">Patrick Brett</a> <span id="year" /></div>
 </body>
+
+<script>
+  document.getElementById("year").innerText = new Date().getFullYear().toString()
+</script>
 
 </html>

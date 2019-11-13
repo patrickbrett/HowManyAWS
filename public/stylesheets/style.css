@@ -1,7 +1,7 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background: linear-gradient(to right, #FF9900, #ee8800);
+  background: linear-gradient(to bottom, #f7a80d, #e69700);
   text-align: center;
   display: flex;
   justify-content: center;
@@ -10,21 +10,152 @@ body {
 
 .container {
   width: 400px;
-  font-size: 28px;
+  font-size: 22px;
+  background: #fff;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  overflow: auto;
+  animation: slight-bounce 0.5s ease-in-out, fade-in 0.5s ease-in;
+}
+
+@keyframes slight-bounce {
+  0% {
+    transform: scale(0.95);
+  }
+  90% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 #services-count {
-  font-size: 96px;
-  font-weight: bold;
-  background: #fff;
   padding: 20px;
+  height: 100px;
+  animation: fade-in 0.2s ease-in;
+}
+
+#count-number {
+  font-size: 72px;
+  font-weight: bold;
+  position: relative;
+  top: -10px;
+  border: 3px solid #ddd;
+  margin: 0 20px;
+  width: auto;
+  animation: fade-in 0.2s ease-in;
+}
+
+#count-number:hover {
+  background: #eee;
+  cursor: pointer;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+#count-number a {
+  color: #000;
+  text-decoration: none;
 }
 
 #aws-logo {
   width: 200px;
   height: auto;
+  position: relative;
+  top: 8px;
 }
 
 a {
   color: #00B7FF;
+}
+
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+  top: 10px;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 27px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #000;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 6px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 6px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 26px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 45px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(19px, 0);
+  }
+}
+
+#footer {
+  position: fixed;
+  bottom: 10px;
+  width: 100vw;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+#footer a {
+  color: inherit;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 640px) {
+  .container {
+    width: 90vw;
+    font-size: 18px;
+    padding: 20px;
+  }
+
+  #count-number {
+    padding: 10px;
+    margin: 0;
+  }
 }
